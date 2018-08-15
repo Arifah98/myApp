@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Aduan</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <button ion-item *ngFor="let aduan of aduanList" (click)="pageDetail(aduan)">
+      <h2>{{ aduan.title}}</h2>
+      <h3>{{ aduan.kategori}}</h3>
+      <ion-note item-end>{{convertDate(aduan.created)}}</ion-note>
+    </button>
+  </ion-list>
+</ion-content>

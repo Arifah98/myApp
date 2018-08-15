@@ -1,0 +1,31 @@
+page-login {
+
+    .bg{
+        background-image: url('../../assets/imgs/bg-image.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .content-center>*{
+        display: flex;
+        align-content: center !important;
+        align-items: center !important;
+
+    }
+
+    .img-logo{
+        max-width: 100px;
+    
+    }
+
+    .card-ios, .card-md {
+        background: transparent;
+        box-shadow : none ;
+    }
+
+    .item-md, .item-ios{
+        background: transparent;
+        color: white; // to change font colour
+    }
+     
+}
